@@ -67,7 +67,7 @@ def parse_args():
                       default="images")
   parser.add_argument('--image_file', dest='image_file',
                       help='the file name of load images for demo',
-                      default="img1.jpg")
+                      default="2390282.jpg")
   parser.add_argument('--classes_dir', dest='classes_dir',
                       help='directory to load object classes for classification',
                       default="data/genome/1600-400-20")
@@ -366,5 +366,6 @@ if __name__ == '__main__':
                   '%s' % (cls),
                   bbox=dict(facecolor='blue', alpha=0.5),
                   fontsize=10, color='white')
-  plt.show()
+  #plt.show()
+  plt.savefig('./example.png')
   print ('boxes=%d' % (len(keep_boxes)))
